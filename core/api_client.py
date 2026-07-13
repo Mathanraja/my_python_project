@@ -16,7 +16,9 @@ def fetch_sample_data():
         print("\n[Success] Live Connection Verified via Environment Variables!")
         print(f"Title of Post #1: {data.get('title')}")
         print(f"Body snippet: {data.get('body')[:60]}...")
+        return data
 
     except requests.exceptions.RequestException as error:
         print("\n[Error] Failed to connect to the external API.")
         print(f"Details: {error}")
+        return None
