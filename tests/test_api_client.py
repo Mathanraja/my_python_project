@@ -26,7 +26,9 @@ def test_fetch_sample_data_http_error(requests_mock):
 def test_fetch_sample_data_connection_error(requests_mock):
     import requests
 
-    requests_mock.get(f"{API_BASE_URL}/posts/1", exc=requests.exceptions.ConnectionError)
+    requests_mock.get(
+        f"{API_BASE_URL}/posts/1", exc=requests.exceptions.ConnectionError
+    )
 
     result = fetch_sample_data()
 
