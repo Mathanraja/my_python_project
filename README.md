@@ -1,5 +1,7 @@
 # My Python Project
 
+[![CI](https://github.com/Mathanraja/my_python_project/actions/workflows/ci.yml/badge.svg)](https://github.com/Mathanraja/my_python_project/actions/workflows/ci.yml)
+
 A clean, structured Python project template configured with an isolated virtual environment and Git source control.
 
 ## Setup Instructions
